@@ -1,8 +1,16 @@
-import Register from "./pages/Register";
+import { UserContextProvider } from "./contexts/User";
+import Login from "./pages/Login";
+import axios from "axios";
 function App() {
+	axios.defaults.baseURL = "http://localhost:8080";
+	// 跨域传递cookie
+	axios.defaults.withCredentials = true;
+
 	return (
 		<div className="bg-red-200">
-			<Register></Register>
+			<UserContextProvider>
+				<Login />
+			</UserContextProvider>
 		</div>
 	);
 }

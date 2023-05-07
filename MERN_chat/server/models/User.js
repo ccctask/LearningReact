@@ -5,6 +5,7 @@ const UserSchema = new mongoose.Schema({
     password: {type: String},
 },{timestamps: true})
 
+// 创建表 User
 const UserModel = mongoose.model('User',UserSchema)
 
 export default UserModel
