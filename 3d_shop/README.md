@@ -8,3 +8,7 @@ npx tailwindcss init -p
 
 npm install three  @react-three/fiber @react-three/drei maath valtio react-color framer-motion
 ```
+
+#### 库介绍
+
+* [valtio：基于Proxy的状态管理库](https://github.com/pmndrs/valtio)
