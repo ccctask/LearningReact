@@ -26,7 +26,7 @@ const Register = () => {
 				console.log(error);
 			});
 		setLoggedUserName(username);
-		// setId(id);
+		setId(id);
 	}
 	return (
 		<div className="flex h-screen  items-center justify-center bg-blue-50">
